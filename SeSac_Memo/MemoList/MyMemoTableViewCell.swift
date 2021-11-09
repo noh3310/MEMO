@@ -9,6 +9,8 @@ import UIKit
 
 class MyMemoTableViewCell: UITableViewCell {
 
+    static let identifier = "MyMemoTableViewCell"
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

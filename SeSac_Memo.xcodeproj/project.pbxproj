@@ -7,15 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D365DA80273A5E0300393BA1 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = D365DA7F273A5E0300393BA1 /* Realm */; };
+		D365DA82273A5E0300393BA1 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D365DA81273A5E0300393BA1 /* RealmSwift */; };
+		D365DA85273A8F9000393BA1 /* MemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D365DA84273A8F9000393BA1 /* MemoData.swift */; };
+		D365DA89273A976F00393BA1 /* MemoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D365DA87273A976F00393BA1 /* MemoTableViewCell.swift */; };
+		D365DA8A273A976F00393BA1 /* MemoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D365DA88273A976F00393BA1 /* MemoTableViewCell.xib */; };
+		D365DA8C273A983700393BA1 /* MyMemoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D365DA8B273A983700393BA1 /* MyMemoTableViewCell.swift */; };
 		D383EAFA273943350092067F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D383EAF9273943350092067F /* AppDelegate.swift */; };
 		D383EAFC273943350092067F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D383EAFB273943350092067F /* SceneDelegate.swift */; };
 		D383EAFE273943350092067F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D383EAFD273943350092067F /* ViewController.swift */; };
 		D383EB01273943350092067F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D383EAFF273943350092067F /* Main.storyboard */; };
 		D383EB03273943380092067F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D383EB02273943380092067F /* Assets.xcassets */; };
 		D383EB06273943380092067F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D383EB04273943380092067F /* LaunchScreen.storyboard */; };
+		D383EB0E273947940092067F /* MemoList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D383EB0D273947940092067F /* MemoList.storyboard */; };
+		D383EB10273947A90092067F /* MemoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D383EB0F273947A90092067F /* MemoListViewController.swift */; };
+		D383EB132739494E0092067F /* EditMemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D383EB122739494E0092067F /* EditMemo.storyboard */; };
+		D383EB152739495A0092067F /* EditMemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D383EB142739495A0092067F /* EditMemoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D365DA84273A8F9000393BA1 /* MemoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoData.swift; sourceTree = "<group>"; };
+		D365DA87273A976F00393BA1 /* MemoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoTableViewCell.swift; sourceTree = "<group>"; };
+		D365DA88273A976F00393BA1 /* MemoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MemoTableViewCell.xib; sourceTree = "<group>"; };
+		D365DA8B273A983700393BA1 /* MyMemoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMemoTableViewCell.swift; sourceTree = "<group>"; };
 		D383EAF6273943350092067F /* SeSac_Memo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeSac_Memo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D383EAF9273943350092067F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D383EAFB273943350092067F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +38,10 @@
 		D383EB02273943380092067F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D383EB05273943380092067F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D383EB07273943380092067F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D383EB0D273947940092067F /* MemoList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MemoList.storyboard; sourceTree = "<group>"; };
+		D383EB0F273947A90092067F /* MemoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListViewController.swift; sourceTree = "<group>"; };
+		D383EB122739494E0092067F /* EditMemo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EditMemo.storyboard; sourceTree = "<group>"; };
+		D383EB142739495A0092067F /* EditMemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMemoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,12 +49,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D365DA82273A5E0300393BA1 /* RealmSwift in Frameworks */,
+				D365DA80273A5E0300393BA1 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D365DA83273A8F7500393BA1 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				D365DA84273A8F9000393BA1 /* MemoData.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		D365DA86273A975700393BA1 /* MemoCell */ = {
+			isa = PBXGroup;
+			children = (
+				D365DA87273A976F00393BA1 /* MemoTableViewCell.swift */,
+				D365DA88273A976F00393BA1 /* MemoTableViewCell.xib */,
+			);
+			path = MemoCell;
+			sourceTree = "<group>";
+		};
 		D383EAED273943350092067F = {
 			isa = PBXGroup;
 			children = (
@@ -60,11 +97,34 @@
 				D383EAFB273943350092067F /* SceneDelegate.swift */,
 				D383EAFD273943350092067F /* ViewController.swift */,
 				D383EAFF273943350092067F /* Main.storyboard */,
+				D365DA83273A8F7500393BA1 /* Database */,
+				D383EB11273947B00092067F /* MemoList */,
+				D383EB162739495E0092067F /* EditMemo */,
 				D383EB02273943380092067F /* Assets.xcassets */,
 				D383EB04273943380092067F /* LaunchScreen.storyboard */,
 				D383EB07273943380092067F /* Info.plist */,
 			);
 			path = SeSac_Memo;
+			sourceTree = "<group>";
+		};
+		D383EB11273947B00092067F /* MemoList */ = {
+			isa = PBXGroup;
+			children = (
+				D365DA86273A975700393BA1 /* MemoCell */,
+				D383EB0D273947940092067F /* MemoList.storyboard */,
+				D365DA8B273A983700393BA1 /* MyMemoTableViewCell.swift */,
+				D383EB0F273947A90092067F /* MemoListViewController.swift */,
+			);
+			path = MemoList;
+			sourceTree = "<group>";
+		};
+		D383EB162739495E0092067F /* EditMemo */ = {
+			isa = PBXGroup;
+			children = (
+				D383EB122739494E0092067F /* EditMemo.storyboard */,
+				D383EB142739495A0092067F /* EditMemoViewController.swift */,
+			);
+			path = EditMemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +143,10 @@
 			dependencies = (
 			);
 			name = SeSac_Memo;
+			packageProductDependencies = (
+				D365DA7F273A5E0300393BA1 /* Realm */,
+				D365DA81273A5E0300393BA1 /* RealmSwift */,
+			);
 			productName = SeSac_Memo;
 			productReference = D383EAF6273943350092067F /* SeSac_Memo.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +175,9 @@
 				Base,
 			);
 			mainGroup = D383EAED273943350092067F;
+			packageReferences = (
+				D365DA7E273A5E0300393BA1 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+			);
 			productRefGroup = D383EAF7273943350092067F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,7 +192,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D383EB0E273947940092067F /* MemoList.storyboard in Resources */,
 				D383EB06273943380092067F /* LaunchScreen.storyboard in Resources */,
+				D383EB132739494E0092067F /* EditMemo.storyboard in Resources */,
+				D365DA8A273A976F00393BA1 /* MemoTableViewCell.xib in Resources */,
 				D383EB03273943380092067F /* Assets.xcassets in Resources */,
 				D383EB01273943350092067F /* Main.storyboard in Resources */,
 			);
@@ -138,8 +208,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D383EB10273947A90092067F /* MemoListViewController.swift in Sources */,
 				D383EAFE273943350092067F /* ViewController.swift in Sources */,
 				D383EAFA273943350092067F /* AppDelegate.swift in Sources */,
+				D365DA8C273A983700393BA1 /* MyMemoTableViewCell.swift in Sources */,
+				D365DA89273A976F00393BA1 /* MemoTableViewCell.swift in Sources */,
+				D365DA85273A8F9000393BA1 /* MemoData.swift in Sources */,
+				D383EB152739495A0092067F /* EditMemoViewController.swift in Sources */,
 				D383EAFC273943350092067F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,6 +372,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,7 +382,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -325,6 +401,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,7 +411,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -360,6 +437,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D365DA7E273A5E0300393BA1 /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa.git";
+			requirement = {
+				kind = exactVersion;
+				version = 10.18.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D365DA7F273A5E0300393BA1 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D365DA7E273A5E0300393BA1 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		D365DA81273A5E0300393BA1 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D365DA7E273A5E0300393BA1 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D383EAEE273943350092067F /* Project object */;
 }

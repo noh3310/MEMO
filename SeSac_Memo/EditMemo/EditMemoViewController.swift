@@ -56,8 +56,8 @@ class EditMemoViewController: UIViewController {
     }
     
     // 화면이 사라질 때 만약 저장을 하지않았을 경우 저장해줌
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
         
         // 옵저버 해제(옵저버를 계속 켜놓으면 메모리 낭비가 있다고 한다.)
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)

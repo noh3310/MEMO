@@ -53,7 +53,8 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29669391556291391" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="jEx-ns-p5k" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="ArR-dJ-mhM"/>
                             <constraint firstItem="jEx-ns-p5k" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="IhK-mh-sOY"/>

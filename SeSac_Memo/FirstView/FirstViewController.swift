@@ -14,6 +14,7 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var uiView: UIView!
     @IBOutlet weak var textLabel: UILabel!
     @IBOutlet weak var startButton: UIButton!
+    @IBOutlet weak var backgroundView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +38,7 @@ class FirstViewController: UIViewController {
     
     // 텍스트라벨 설정
     func setTextLabel() {
-        textLabel.text = "처음 오셨군요!\n환영합니다.\n\n 당신만의 메모를 작성하고 관리해보세요"
+        textLabel.text = "처음 오셨군요!\n환영합니다:)\n\n당신만의 메모를 작성하고 관리해보세요!"
         textLabel.numberOfLines = 0
         textLabel.textColor = .white
         textLabel.font = UIFont.systemFont(ofSize: 20)

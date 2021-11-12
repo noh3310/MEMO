@@ -29,7 +29,7 @@ class MemoListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // UserDefaults 초기화
+        // UserDefaults 초기화(처음 화면 보여줄 때 사용)
         for key in UserDefaults.standard.dictionaryRepresentation().keys {
             UserDefaults.standard.removeObject(forKey: key.description)
         }
@@ -93,6 +93,7 @@ class MemoListViewController: UIViewController {
         let searchController = UISearchController(searchResultsController: nil)
         searchController.searchBar.placeholder = "검색"
         searchController.searchResultsUpdater = self
+        searchController.searchBar.tintColor = .systemOrange
         
         self.navigationItem.searchController = searchController
     }
@@ -101,6 +102,7 @@ class MemoListViewController: UIViewController {
     func setEditButton() {
         editButton.title = ""
         editButton.image = UIImage(systemName: "square.and.pencil")
+        editButton.tintColor = .systemOrange
     }
     
     // 처음왔을 때 화면 출력해주는 부분
@@ -116,10 +118,12 @@ class MemoListViewController: UIViewController {
             
             let storyboard = UIStoryboard(name: "FirstView", bundle: nil)
             
-            let vc = storyboard.instantiateViewController(withIdentifier: FirstViewController.identifier)
-            vc.modalPresentationStyle = .fullScreen
+            let vc = storyboard.instantiateViewController(withIdentifier: FirstViewController.identifier) as! FirstViewController
+            //  상위 뷰컨트롤러로 보여줌
+            vc.modalPresentationStyle = .overCurrentContext
+            vc.modalTransitionStyle = .crossDissolve
             
-            self.present(vc, animated: true, completion: nil)
+            self.navigationController?.present(vc, animated: false, completion: nil)
         }
     }
     
@@ -129,7 +133,7 @@ class MemoListViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
-        tableView.backgroundColor = .white
+        tableView.backgroundColor = .black
         
         // 검색결과를 스크롤 하는 경우 키보드 내려줌
         tableView.keyboardDismissMode = .onDrag
@@ -171,8 +175,6 @@ extension MemoListViewController: UITableViewDelegate, UITableViewDataSource {
         if searchText != "" && (section == 0 || section == 1){
             return 0
         }
-        
-        // 셀 개수 리턴
         return getCellList(section: section).count
     }
     
@@ -186,9 +188,10 @@ extension MemoListViewController: UITableViewDelegate, UITableViewDataSource {
         // 셀 개수 리턴
         let searchList = getCellList(section: section)
         
+        
         // 검색값이 있다면 검색값만 보여줌
-        if searchText != "" && (section == 0 || section == 1) ||
-            searchText == "" && section == 2{
+        if (searchText != "" && (section == 0 || section == 1)) ||
+            (searchText == "" && section == 2) {
             return nil
         }
         
@@ -197,10 +200,16 @@ extension MemoListViewController: UITableViewDelegate, UITableViewDataSource {
         myLabel.frame = CGRect(x: 20, y: 8, width: 320, height: 20)
         myLabel.font = UIFont.boldSystemFont(ofSize: 18)
         
+        // 리스트가 없다면
+        if searchList.count == 0 {
+            return nil
+        }
+        
         let count = (searchText == "") ? "" : getNumberFormatString(count: searchList.count)
+        
         switch section {
-        case 0: myLabel.text = "고정된 메모 \(count)"
-        case 1: myLabel.text = "메모 \(count)"
+        case 0: myLabel.text = "고정된 메모"
+        case 1: myLabel.text = "메모"
         case 2: myLabel.text = "\(count)개 검색됨"
         default: break
         }
@@ -265,7 +274,7 @@ extension MemoListViewController: UITableViewDelegate, UITableViewDataSource {
         cell.detailTextLabel?.numberOfLines = 1
         
         // 배경색 설정
-        cell.backgroundColor = .lightGray
+        cell.backgroundColor = UIColor(red: 27/255, green: 27/255, blue: 27/255, alpha: 1)
         
         return cell
     }
@@ -371,7 +380,7 @@ extension MemoListViewController: UISearchResultsUpdating {
     
     // 텍스트 업데이트 했을때
     func updateSearchResults(for searchController: UISearchController) {
-        guard let text = searchController.searchBar.text else { return }
+        guard let text = searchController.searchBar.text?.lowercased() else { return }
         self.searchText = text
     }
 }

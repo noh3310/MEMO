@@ -34,11 +34,15 @@ class EditMemoViewController: UIViewController {
         // 백버튼 이름 만들어줌
         setBackButton()
         
+        // 텍스트뷰 설정
+        setMemoTextView()
+        
         // 메모정보 있으면 화면에 보여줌
         setMemoInformation()
         
         // 키보드 설정
         setKeyboard()
+
         
         // 키보드 옵저버 설정
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
@@ -62,7 +66,6 @@ class EditMemoViewController: UIViewController {
         let list = memoTextView.text.devideMemo(text: memoTextView.text)
         let title = list[0]
         let content = (list[1] == "") ? nil : list[1]
-        print("타이틀 = \(title), 내용 = \(String(describing: content))")
         
         // 기존에 있는 메모를 수정했다면 데이터랑, 날짜 업데이트 해줌
         if let memoItem = memoItem {
@@ -112,6 +115,12 @@ class EditMemoViewController: UIViewController {
     // 백버튼 이름 설정
     func setBackButton() {
         self.navigationController?.navigationBar.topItem?.title = backButtonTitle
+        self.navigationController?.navigationBar.tintColor = .systemOrange
+    }
+    
+    // 텍스트뷰 설정
+    func setMemoTextView() {
+        memoTextView.tintColor = .systemOrange
     }
     
     // 내비게이션바 설정
@@ -121,7 +130,9 @@ class EditMemoViewController: UIViewController {
         
         // 공유버튼, 저장버튼 생성
         let shareButton = UIBarButtonItem(image: UIImage(systemName: "square.and.arrow.up"), style: .plain, target: self, action: #selector(shareButtonClicked(_:)))
+        shareButton.tintColor = .systemOrange
         let saveButton = UIBarButtonItem(title: "완료", style: .plain, target: self, action: #selector(saveButtonClicked(_:)))
+        saveButton.tintColor = .systemOrange
         
         // navigationBarButton의 오른쪽부터 채워줌
         self.navigationItem.rightBarButtonItems = [saveButton, shareButton]

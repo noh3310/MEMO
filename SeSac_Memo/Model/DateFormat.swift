@@ -15,11 +15,11 @@ enum DateFormat: Int {
     func getDateFormat() -> String {
         switch self {
         case .day:
-            return "a HH:mm" // a는 오전 오후를 나타냄, 한국식으로 바꾸면 나타남
+            return "a h:mm" // a는 오전 오후를 나타냄, 한국식으로 바꾸면 나타남
         case .week:
             return "EEEE" // 일요일, 화요일 처럼 표현
         case .others:
-            return "YYYY. MM. dd a HH:mm"
+            return "YYYY. MM. dd a h:mm"
         }
     }
 }

@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D31DB508273C260A000A943E /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31DB507273C260A000A943E /* String+Extension.swift */; };
+		D31DB50A273C262F000A943E /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31DB509273C262F000A943E /* Date+Extension.swift */; };
+		D3533AD1273D6F5000355FF6 /* DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3533AD0273D6F5000355FF6 /* DateFormat.swift */; };
+		D3533AD3273D98F900355FF6 /* Calendar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3533AD2273D98F900355FF6 /* Calendar+Extension.swift */; };
+		D3533AD6273DA13000355FF6 /* FirstView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3533AD5273DA13000355FF6 /* FirstView.storyboard */; };
+		D3533AD8273DA1B100355FF6 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3533AD7273DA1B100355FF6 /* FirstViewController.swift */; };
 		D365DA80273A5E0300393BA1 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = D365DA7F273A5E0300393BA1 /* Realm */; };
 		D365DA82273A5E0300393BA1 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D365DA81273A5E0300393BA1 /* RealmSwift */; };
 		D365DA85273A8F9000393BA1 /* MemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D365DA84273A8F9000393BA1 /* MemoData.swift */; };
-		D365DA89273A976F00393BA1 /* MemoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D365DA87273A976F00393BA1 /* MemoTableViewCell.swift */; };
-		D365DA8A273A976F00393BA1 /* MemoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D365DA88273A976F00393BA1 /* MemoTableViewCell.xib */; };
-		D365DA8C273A983700393BA1 /* MyMemoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D365DA8B273A983700393BA1 /* MyMemoTableViewCell.swift */; };
+		D365DA8F273ADD6700393BA1 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = D365DA8E273ADD6700393BA1 /* Toast */; };
 		D383EAFA273943350092067F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D383EAF9273943350092067F /* AppDelegate.swift */; };
 		D383EAFC273943350092067F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D383EAFB273943350092067F /* SceneDelegate.swift */; };
 		D383EAFE273943350092067F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D383EAFD273943350092067F /* ViewController.swift */; };
@@ -26,10 +30,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D31DB507273C260A000A943E /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		D31DB509273C262F000A943E /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		D3533AD0273D6F5000355FF6 /* DateFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormat.swift; sourceTree = "<group>"; };
+		D3533AD2273D98F900355FF6 /* Calendar+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+Extension.swift"; sourceTree = "<group>"; };
+		D3533AD5273DA13000355FF6 /* FirstView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirstView.storyboard; sourceTree = "<group>"; };
+		D3533AD7273DA1B100355FF6 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		D365DA84273A8F9000393BA1 /* MemoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoData.swift; sourceTree = "<group>"; };
-		D365DA87273A976F00393BA1 /* MemoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoTableViewCell.swift; sourceTree = "<group>"; };
-		D365DA88273A976F00393BA1 /* MemoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MemoTableViewCell.xib; sourceTree = "<group>"; };
-		D365DA8B273A983700393BA1 /* MyMemoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMemoTableViewCell.swift; sourceTree = "<group>"; };
 		D383EAF6273943350092067F /* SeSac_Memo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeSac_Memo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D383EAF9273943350092067F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D383EAFB273943350092067F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D365DA8F273ADD6700393BA1 /* Toast in Frameworks */,
 				D365DA82273A5E0300393BA1 /* RealmSwift in Frameworks */,
 				D365DA80273A5E0300393BA1 /* Realm in Frameworks */,
 			);
@@ -57,21 +65,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D31DB506273C105E000A943E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D31DB507273C260A000A943E /* String+Extension.swift */,
+				D31DB509273C262F000A943E /* Date+Extension.swift */,
+				D3533AD2273D98F900355FF6 /* Calendar+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		D3533ACF273D6F3B00355FF6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D3533AD0273D6F5000355FF6 /* DateFormat.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D3533AD4273DA10F00355FF6 /* FirstView */ = {
+			isa = PBXGroup;
+			children = (
+				D3533AD5273DA13000355FF6 /* FirstView.storyboard */,
+				D3533AD7273DA1B100355FF6 /* FirstViewController.swift */,
+			);
+			path = FirstView;
+			sourceTree = "<group>";
+		};
 		D365DA83273A8F7500393BA1 /* Database */ = {
 			isa = PBXGroup;
 			children = (
 				D365DA84273A8F9000393BA1 /* MemoData.swift */,
 			);
 			path = Database;
-			sourceTree = "<group>";
-		};
-		D365DA86273A975700393BA1 /* MemoCell */ = {
-			isa = PBXGroup;
-			children = (
-				D365DA87273A976F00393BA1 /* MemoTableViewCell.swift */,
-				D365DA88273A976F00393BA1 /* MemoTableViewCell.xib */,
-			);
-			path = MemoCell;
 			sourceTree = "<group>";
 		};
 		D383EAED273943350092067F = {
@@ -97,9 +123,12 @@
 				D383EAFB273943350092067F /* SceneDelegate.swift */,
 				D383EAFD273943350092067F /* ViewController.swift */,
 				D383EAFF273943350092067F /* Main.storyboard */,
+				D31DB506273C105E000A943E /* Extension */,
+				D3533ACF273D6F3B00355FF6 /* Model */,
 				D365DA83273A8F7500393BA1 /* Database */,
 				D383EB11273947B00092067F /* MemoList */,
 				D383EB162739495E0092067F /* EditMemo */,
+				D3533AD4273DA10F00355FF6 /* FirstView */,
 				D383EB02273943380092067F /* Assets.xcassets */,
 				D383EB04273943380092067F /* LaunchScreen.storyboard */,
 				D383EB07273943380092067F /* Info.plist */,
@@ -110,9 +139,7 @@
 		D383EB11273947B00092067F /* MemoList */ = {
 			isa = PBXGroup;
 			children = (
-				D365DA86273A975700393BA1 /* MemoCell */,
 				D383EB0D273947940092067F /* MemoList.storyboard */,
-				D365DA8B273A983700393BA1 /* MyMemoTableViewCell.swift */,
 				D383EB0F273947A90092067F /* MemoListViewController.swift */,
 			);
 			path = MemoList;
@@ -146,6 +173,7 @@
 			packageProductDependencies = (
 				D365DA7F273A5E0300393BA1 /* Realm */,
 				D365DA81273A5E0300393BA1 /* RealmSwift */,
+				D365DA8E273ADD6700393BA1 /* Toast */,
 			);
 			productName = SeSac_Memo;
 			productReference = D383EAF6273943350092067F /* SeSac_Memo.app */;
@@ -177,6 +205,7 @@
 			mainGroup = D383EAED273943350092067F;
 			packageReferences = (
 				D365DA7E273A5E0300393BA1 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+				D365DA8D273ADD6700393BA1 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
 			);
 			productRefGroup = D383EAF7273943350092067F /* Products */;
 			projectDirPath = "";
@@ -195,8 +224,8 @@
 				D383EB0E273947940092067F /* MemoList.storyboard in Resources */,
 				D383EB06273943380092067F /* LaunchScreen.storyboard in Resources */,
 				D383EB132739494E0092067F /* EditMemo.storyboard in Resources */,
-				D365DA8A273A976F00393BA1 /* MemoTableViewCell.xib in Resources */,
 				D383EB03273943380092067F /* Assets.xcassets in Resources */,
+				D3533AD6273DA13000355FF6 /* FirstView.storyboard in Resources */,
 				D383EB01273943350092067F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,13 +238,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				D383EB10273947A90092067F /* MemoListViewController.swift in Sources */,
+				D31DB508273C260A000A943E /* String+Extension.swift in Sources */,
 				D383EAFE273943350092067F /* ViewController.swift in Sources */,
 				D383EAFA273943350092067F /* AppDelegate.swift in Sources */,
-				D365DA8C273A983700393BA1 /* MyMemoTableViewCell.swift in Sources */,
-				D365DA89273A976F00393BA1 /* MemoTableViewCell.swift in Sources */,
 				D365DA85273A8F9000393BA1 /* MemoData.swift in Sources */,
+				D31DB50A273C262F000A943E /* Date+Extension.swift in Sources */,
 				D383EB152739495A0092067F /* EditMemoViewController.swift in Sources */,
 				D383EAFC273943350092067F /* SceneDelegate.swift in Sources */,
+				D3533AD1273D6F5000355FF6 /* DateFormat.swift in Sources */,
+				D3533AD3273D98F900355FF6 /* Calendar+Extension.swift in Sources */,
+				D3533AD8273DA1B100355FF6 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +479,14 @@
 				version = 10.18.0;
 			};
 		};
+		D365DA8D273ADD6700393BA1 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -459,6 +499,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = D365DA7E273A5E0300393BA1 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
 			productName = RealmSwift;
+		};
+		D365DA8E273ADD6700393BA1 /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D365DA8D273ADD6700393BA1 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

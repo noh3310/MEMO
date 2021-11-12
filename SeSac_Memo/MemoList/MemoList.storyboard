@@ -37,17 +37,18 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Hew-CG-9iZ" firstAttribute="top" secondItem="Eq7-XE-SJM" secondAttribute="bottom" id="HsH-Dd-Cn7"/>
+                            <constraint firstItem="Eq7-XE-SJM" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="HYd-pD-fjF"/>
                             <constraint firstItem="Hew-CG-9iZ" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="NaV-dd-JWB"/>
                             <constraint firstItem="Hew-CG-9iZ" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="UUW-Ue-2Qq"/>
-                            <constraint firstItem="Eq7-XE-SJM" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="Zlz-XY-4Uz"/>
-                            <constraint firstItem="Eq7-XE-SJM" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="ez7-M0-X0q"/>
-                            <constraint firstItem="Eq7-XE-SJM" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="tK9-ni-RXC"/>
+                            <constraint firstItem="Eq7-XE-SJM" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="eB9-EZ-JJS"/>
+                            <constraint firstItem="Eq7-XE-SJM" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="sM7-nw-NFF"/>
+                            <constraint firstItem="Hew-CG-9iZ" firstAttribute="top" secondItem="Eq7-XE-SJM" secondAttribute="bottom" id="wqw-10-uHY"/>
                             <constraint firstItem="Hew-CG-9iZ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="zY9-mX-bZP"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="nvE-bM-rGq"/>
                     <connections>
+                        <outlet property="editButton" destination="Xlw-nd-GXy" id="lt1-Cb-Kb8"/>
                         <outlet property="tableView" destination="Eq7-XE-SJM" id="W3G-X8-hJH"/>
                     </connections>
                 </viewController>

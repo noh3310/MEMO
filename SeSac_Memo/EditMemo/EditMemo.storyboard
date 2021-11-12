@@ -16,16 +16,39 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="95K-1O-pU3">
+                                <rect key="frame" x="20" y="64" width="374" height="778"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="95K-1O-pU3" secondAttribute="bottom" constant="20" id="NHi-Kq-hiA"/>
+                            <constraint firstItem="95K-1O-pU3" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="PDR-Fb-daS"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="95K-1O-pU3" secondAttribute="trailing" constant="20" id="WEB-aV-eZI"/>
+                            <constraint firstItem="95K-1O-pU3" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="xvx-tE-YYB"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="edd-kB-7dS"/>
+                    <connections>
+                        <outlet property="memoTextView" destination="95K-1O-pU3" id="PM0-yJ-wSl"/>
+                        <outlet property="textViewBottom" destination="NHi-Kq-hiA" id="n8l-jN-dwe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="30" y="80"/>
+            <point key="canvasLocation" x="939.13043478260875" y="79.6875"/>
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

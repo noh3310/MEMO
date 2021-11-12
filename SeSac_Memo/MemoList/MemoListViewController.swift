@@ -30,9 +30,9 @@ class MemoListViewController: UIViewController {
         super.viewDidLoad()
         
         // UserDefaults 초기화(처음 화면 보여줄 때 사용)
-        for key in UserDefaults.standard.dictionaryRepresentation().keys {
-            UserDefaults.standard.removeObject(forKey: key.description)
-        }
+//        for key in UserDefaults.standard.dictionaryRepresentation().keys {
+//            UserDefaults.standard.removeObject(forKey: key.description)
+//        }
         
         tasks = localRealm.objects(Memo.self)
         

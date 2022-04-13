@@ -1,11 +1,23 @@
 ## 메모 앱
-
-## 앱 기능
+애플 기본 메모앱을 따라 제작했습니다. 기능은 아래와 같습니다.
 - 메모 등록 & 수정
 - 메모 검색
 - 메모 고정
 - 메모 삭제
 - 메모 공유
+
+## 정보
+- 최소버전
+  - 13.0
+
+### 사용 기술
+- Storyboard
+- Autolayout
+- Calendar
+- IQKeyboardManager
+- UserDefault
+- Realm
+- Toast
 
 ## Issue
 - 각 뷰컨트롤러에 중복되는 코드 발생
@@ -34,7 +46,7 @@
   
   self.present(vc, animated: true, completion: nil)
   ```
-- 오늘, 이번주, 그 이외의 날짜 분기처리
+- 오늘, 이번주, 그 이외의 날짜 enum 사용해 분기처리
   ``` Swift
   enum DateFormat: Int {
     case day
